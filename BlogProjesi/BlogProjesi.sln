@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProjesi.UI", "BlogProje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProjesi.DAL", "BlogProjesi.DAL\BlogProjesi.DAL.csproj", "{6582C1F6-38D3-4A7E-95B5-2DB8478B87D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProje.DATA", "BlogProje.DATA\BlogProje.DATA.csproj", "{C59DDBF3-D658-408E-B568-C44D2AF00DC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProjesi.DATA", "BlogProje.DATA\BlogProjesi.DATA.csproj", "{C59DDBF3-D658-408E-B568-C44D2AF00DC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

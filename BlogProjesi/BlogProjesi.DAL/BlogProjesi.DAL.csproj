@@ -52,6 +52,12 @@
     <Compile Include="Mapping\ArticleMapping.cs" />
     <Compile Include="Mapping\CategoryMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Abstract\IArticle.cs" />
+    <Compile Include="Repository\Abstract\IRepository.cs" />
+    <Compile Include="Repository\Abstract\IUnitOfWork.cs" />
+    <Compile Include="Repository\Concrete\ArticleConcrete.cs" />
+    <Compile Include="Repository\Concrete\EFRepository.cs" />
+    <Compile Include="Repository\Concrete\EFUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -59,9 +65,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BlogProje.DATA\BlogProje.DATA.csproj">
+    <ProjectReference Include="..\BlogProje.DATA\BlogProjesi.DATA.csproj">
       <Project>{c59ddbf3-d658-408e-b568-c44d2af00dc5}</Project>
-      <Name>BlogProje.DATA</Name>
+      <Name>BlogProjesi.DATA</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
