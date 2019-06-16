@@ -19,15 +19,13 @@ namespace BlogProjesi.DAL.Mapping
             Property(x => x.CategoryID).IsRequired();
             Property(x => x.MemberID).IsRequired();
             Property(x => x.Title).IsRequired().HasMaxLength(100);
-            Property(x => x.Content).IsRequired().HasMaxLength(100);
+            Property(x => x.Content).IsRequired().HasMaxLength(1000);
             Property(x => x.Picture).IsRequired();
-            Property(x => x.DateTime).HasColumnType("datetime2").IsOptional();
+            Property(x => x.CreationDate).HasColumnType("datetime2").IsOptional();
             Property(x => x.Voting).IsRequired();
 
             HasRequired(x => x.Category).WithMany(x => x.Articles).HasForeignKey(x => x.CategoryID);
-
-            HasRequired(x => x.Member).WithMany(x => x.Articles).HasForeignKey(x => x.MemberID);
-
+            
             
            
         }

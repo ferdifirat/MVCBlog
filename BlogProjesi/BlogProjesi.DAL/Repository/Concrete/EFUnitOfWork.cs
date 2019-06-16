@@ -1,7 +1,6 @@
 ﻿using BlogProjesi.DAL.Repository.Abstract;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,40 +9,17 @@ namespace BlogProjesi.DAL.Repository.Concrete
 {
     public class EFUnitOfWork : IUnitOfWork
     {
-        private readonly DbContext _dbContext;
+        private readonly Context _dbContext;
         private bool disposed = false;
 
-        public EFUnitOfWork(DbContext dbContext)
+        public EFUnitOfWork(Context dbContext)
         {
             _dbContext = dbContext;
         }
 
-        ~EFUnitOfWork()
-        {
-
-        }
-        public void Dispose()
-        {
-            //IDisposible'dan kalıtılan IUnitOfWork interface'sinden gelen Dispose metodu, işlem yapıldıktan sonra, oluşturulan context'i ram'den siler. Genelde crud işlemlerinden sonra kullanılır.
-            Dispose(true);
-            GC.SuppressFinalize(true);
-        }
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!disposed)
-            {
-                if (disposing)
-                {
-                    _dbContext.Dispose();
-                }
-            }
-            this.disposed = true;
-        }
-
         public IRepository<T> GetRepository<T>() where T : class
         {
-            //Instance alındığı zaman hangi entity verildiyse o entity için generic yapılar ayarlanır ve bu yapıda repository döndürülür.
+            //Instance alindigi zaman hangi entity verildi ise o entity icin generic yapilar ayarlanir ve ona gore repository geri dondurulur.
             return new EFRepository<T>(_dbContext);
         }
 
@@ -55,9 +31,27 @@ namespace BlogProjesi.DAL.Repository.Concrete
             }
             catch (Exception ex)
             {
-                //Exception olarak gelen ex mesajı direkt olarak kullanıcıya bildirilmiş olur. Stacktrace yapısı bozulmadan ileti yollanmış olur.
-                throw ex;
+                throw new Exception(ex.ToString());
             }
+        }
+
+        public void Dispose()
+        {
+            //IDisposible'dan kalitilan IUnitOfWork interface'sinden gelen Dispose metodu, islem yapildiktan sonra, olusturulan context'i ram'den siler. Genelde veritabaninda crud islemleri yapildiktan sonra kullanilir.
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    _dbContext.Dispose();
+                }
+            }
+            this.disposed = true;
         }
     }
 }

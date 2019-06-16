@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace BlogProjesi.DAL.Repository.Abstract
 {
-    public interface IRepository<T> where T : class
+     public interface IRepository<T> where T : class
     {
         //Generic olarak kullanılacak olan metodlar, soyut bir biçimde ve generic yapıda tanımlanır.
-        ICollection<T> GetAll();
         IQueryable<T> GetEntity();
-
-        T GetById(int id);
+        ICollection<T> GetAll();
+        T GetById(string id);
+        T GetById(int? id);
         void Insert(T entity);
         void Update(T entity);
-        void Delete(int id);
         void Delete(T entity);
+        void Delete(int id);
 
     }
 }

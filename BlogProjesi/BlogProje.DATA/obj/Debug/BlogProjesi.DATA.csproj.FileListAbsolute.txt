@@ -1,0 +1,87 @@
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\BlogProje.DATA.dll.config
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\BlogProje.DATA.dll
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\BlogProje.DATA.pdb
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\EntityFramework.dll
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.dll
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Newtonsoft.Json.dll
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Owin.dll
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\EntityFramework.xml
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.xml
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\bin\Debug\Newtonsoft.Json.xml
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProjesi.DATA.csprojAssemblyReference.cache
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProjesi.DATA.csproj.CoreCompileInputs.cache
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProjesi.DATA.csproj.CopyComplete
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProje.DATA.dll
+C:\Users\irem eren\Desktop\Yeni klasör (8)\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProje.DATA.pdb
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\BlogProje.DATA.dll.config
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\BlogProje.DATA.dll
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\BlogProje.DATA.pdb
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\EntityFramework.dll
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.dll
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Newtonsoft.Json.dll
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Owin.dll
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\EntityFramework.xml
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.xml
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\bin\Debug\Newtonsoft.Json.xml
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProjesi.DATA.csprojAssemblyReference.cache
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProjesi.DATA.csproj.CoreCompileInputs.cache
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProjesi.DATA.csproj.CopyComplete
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProje.DATA.dll
+C:\Users\irem eren\Desktop\Yeni klasör (9)\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProje.DATA.pdb
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\BlogProje.DATA.dll.config
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\BlogProje.DATA.dll
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\BlogProje.DATA.pdb
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\EntityFramework.dll
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.dll
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Owin.dll
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\EntityFramework.xml
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.xml
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProjesi.DATA.csprojAssemblyReference.cache
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProjesi.DATA.csproj.CoreCompileInputs.cache
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProjesi.DATA.csproj.CopyComplete
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProje.DATA.dll
+C:\Users\Ferdi\Desktop\projeblog\BlogProjesi\BlogProje.DATA\obj\Debug\BlogProje.DATA.pdb

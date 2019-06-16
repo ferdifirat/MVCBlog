@@ -12,7 +12,7 @@ namespace BlogProje.DATA.Model_Entities
         public int TagID { get; set; }
         public string TagName { get; set; }
 
-        public virtual List<ArticleTag> EtiketinMakalesi { get; set; }
+        public virtual List<ArticleTag> ArticleTags { get; set; }
 
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BlogProje.DATA.Identity_Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,9 +15,10 @@ namespace BlogProje.DATA.Model_Entities
         public int MemberID { get; set; } //üyeıd
         public int ArticleID { get; set; } //makaleıd
         public DateTime CommentDate { get; set; } //yorumtarihi
+        public bool IsActive { get; set; }
 
         public virtual Article Article { get; set; }
-        public virtual Member Member { get; set; }
+        public virtual Kullanici Kullanici { get; set; }
 
     }
 }

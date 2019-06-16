@@ -10,21 +10,31 @@ namespace BlogProjesi.DAL.Repository.Concrete
 {
     public class EFRepository<T> : IRepository<T> where T : class
     {
-        private readonly DbContext _dbContext;
+        //Instance alindigi zaman yollanan Context bilgisine gore (Category, Product gibi entity'ler) repository olusturulur. Her entityde kullanilan yapilar bu class icerisinde generic olarak tanimlanir, hangi class yollanirsa tanimlanan yapilar o class icin yapilmasi belirlenen isleri yapar. Bu sayede her entity icerisinde ayni kod satirlarinin yazilmasi onlenmis olur. Ote yandan test islemlerinde de bir hata bulundugunda sadece bu class icerisinde yapilacak degisiklik, bu yapilari kullanan tum kod satirlarinda da degisikligi saglar.
+        private readonly Context _dbContext;
         private readonly DbSet<T> _dbSet;
-        public EFRepository(DbContext dbContext)
+
+        public EFRepository(Context dbContext)
         {
             _dbContext = dbContext;
+            //Burada DbContext genel bir sinif oldugu icin Set<>() metodunda '<>' icerisine yazilan kisim butun metodlarin hangi entity icin calisacagini belirler.
             _dbSet = _dbContext.Set<T>();
         }
+
+
+        public void Delete(T entity)
+        {
+            _dbSet.Remove(entity);
+        }
+
         public void Delete(int id)
         {
             _dbSet.Remove(GetById(id));
         }
 
-        public void Delete(T entity)
+        public IQueryable<T> GetEntity()
         {
-            _dbSet.Remove(entity);
+            return _dbSet;
         }
 
         public ICollection<T> GetAll()
@@ -32,14 +42,14 @@ namespace BlogProjesi.DAL.Repository.Concrete
             return _dbSet.ToList();
         }
 
-        public T GetById(int id)
+        public T GetById(string id)
         {
             return _dbSet.Find(id);
         }
 
-        public IQueryable<T> GetEntity()
+        public T GetById(int? id)
         {
-            return _dbSet;
+            return _dbSet.Find(id);
         }
 
         public void Insert(T entity)

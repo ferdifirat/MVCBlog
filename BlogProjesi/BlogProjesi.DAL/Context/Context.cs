@@ -25,5 +25,7 @@ namespace BlogProjesi.DAL.Context
         public DbSet<Tag> Tags { get; set; }
 
 
+        
     }
+    
 }

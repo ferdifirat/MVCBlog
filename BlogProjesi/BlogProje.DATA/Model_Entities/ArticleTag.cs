@@ -12,8 +12,8 @@ namespace BlogProje.DATA.Model_Entities
         public int ArticleID { get; set; }
         public int TagID { get; set; }
 
-        public virtual Article EtiketinMakalesi { get; set; }
-        public virtual Tag MakaleninEtiketi { get; set; }
+        public virtual Article Article { get; set; }
+        public virtual Tag Tag { get; set; }
 
     }
 }
