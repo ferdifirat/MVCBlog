@@ -7,6 +7,7 @@ using Microsoft.Owin.Security.Google;
 using Owin;
 using BlogSonUygulama.Models;
 using DATA.Model_Entities;
+using DAL;
 
 namespace BlogSonUygulama
 {
@@ -16,7 +17,7 @@ namespace BlogSonUygulama
         public void ConfigureAuth(IAppBuilder app)
         {
             // Configure the db context, user manager and signin manager to use a single instance per request
-            app.CreatePerOwinContext(ApplicationDbContext.Create);
+            app.CreatePerOwinContext(Context.Create);
             app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
             app.CreatePerOwinContext<ApplicationSignInManager>(ApplicationSignInManager.Create);
 

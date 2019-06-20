@@ -24,37 +24,5 @@ namespace BlogSonUygulama.Controllers
             uStore = new UserStore<Kullanici>(db);
             AppUserManager = new UserManager<Kullanici>(uStore);
         }
-
-
-        public UnrealUser GetUserByName(string username, string password)
-        {
-            //Only SuperAdmin or Admin can delete users (Later when implement roles)
-            Kullanici user = AppUserManager.Find(username, password);
-
-            if (user != null)
-            {
-
-                UnrealUser a = new UnrealUser()
-                {
-                    FirstName = user.Name,
-                    LastName = user.LastName,
-                    UserName = user.UserName,
-                };
-
-                return a;
-            }
-
-            return null;
-
-        }
-
-    }
-    public class UnrealUser  //gerçek kullanıcı
-    {
-        public string UserName { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string ImageLink { get; set; }
-
     }
 }

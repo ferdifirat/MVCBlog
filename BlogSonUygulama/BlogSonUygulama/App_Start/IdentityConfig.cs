@@ -12,6 +12,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using BlogSonUygulama.Models;
 using DATA.Model_Entities;
+using DAL;
 
 namespace BlogSonUygulama
 {
@@ -43,7 +44,7 @@ namespace BlogSonUygulama
 
         public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context) 
         {
-            var manager = new ApplicationUserManager(new UserStore<Kullanici>(context.Get<ApplicationDbContext>()));
+            var manager = new ApplicationUserManager(new UserStore<Kullanici>(context.Get<Context>()));
             // Configure validation logic for usernames
             manager.UserValidator = new UserValidator<Kullanici>(manager)
             {

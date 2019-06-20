@@ -12,14 +12,6 @@ namespace DATA.Model_Entities
     public class Kullanici : IdentityUser
     {
 
-        //TODO: Kullanıcı class'ı silinecek ApplicationUser içinde onun prop'larını yazdık...Ya oradan ApplicationUser'ı silip buraya direk oluşturmamız gerekiyor...2 yeere de IdentityUser miras verince çift Mapping yapıyor :)
-
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public string Password { get; set; }
-        public DateTime KayitTarihi { get; set; }
-        public string Photo { get; set; }
-
         // public virtual User User { get; set; }
         public virtual List<Comment> Comments { get; set; }
         public virtual List<Article> Articles { get; set; }

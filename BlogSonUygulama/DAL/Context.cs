@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class Context : IdentityDbContext
+    public class Context : IdentityDbContext<Kullanici>
     {
         public static Context Create()
         {
