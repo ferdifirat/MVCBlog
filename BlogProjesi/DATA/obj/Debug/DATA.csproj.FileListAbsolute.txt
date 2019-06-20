@@ -1,0 +1,16 @@
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\bin\Debug\DATA.dll.config
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\bin\Debug\DATA.dll
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\bin\Debug\DATA.pdb
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\bin\Debug\EntityFramework.dll
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\bin\Debug\EntityFramework.xml
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\obj\Debug\DATA.csprojAssemblyReference.cache
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\obj\Debug\DATA.csproj.CoreCompileInputs.cache
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\obj\Debug\DATA.csproj.CopyComplete
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\obj\Debug\DATA.dll
+C:\Users\Ferdi\Desktop\BlogProjesi\DATA\obj\Debug\DATA.pdb

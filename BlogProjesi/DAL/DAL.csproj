@@ -60,6 +60,7 @@
     <Compile Include="Mapping\CategoryMapping.cs" />
     <Compile Include="Mapping\CommentMapping.cs" />
     <Compile Include="Mapping\TagMapping.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

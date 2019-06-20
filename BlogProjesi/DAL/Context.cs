@@ -17,7 +17,7 @@ namespace DAL
             return new Context();
         }
 
-        public Context() : base("server=.; database = BlogDb11; uid=sa; pwd=123")
+        public Context() : base("server=.; database = BlogDb12; uid=sa; pwd=123")
         {
 
         }
