@@ -1,0 +1,43 @@
+﻿@model MyBlog.DataAccess.ViewModels.CommentsViewModel
+@{
+    ViewData["Title"] = "Default";
+}
+
+<form asp-action="AddComment" asp-controller="Post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Comment.PostId" value="@Model.PostId" />
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label asp-for="Comment.Content" class="control-label">Yorumunuzu Yazın : </label>
+            <textarea asp-for="Comment.Content" class="form-control"></textarea>
+            <span asp-validation-for="Comment.Content" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row col-md-12">
+        <div class="form-group">
+            <input type="submit" value="Yorum Yap" class="btn btn-primary" style="float:right" />
+        </div>
+    </div>
+
+</form>
+
+
+@if (Model.Comments != null && Model.Comments.Count() > 0)
+{
+
+    @foreach (var item in Model.Comments)
+    {
+        <div class="row">
+            <div class="media">
+                <img src="https://image.flaticon.com/icons/svg/33/33269.svg" class="align-self-center mr-3">
+                <div class="media-body">
+                    <h5 class="mt-0">@item.AspNetUsers.UserName</h5>
+                    <p>@item.Content</p>
+                    <p>@item.CommentDate</p>
+                </div>
+            </div>
+        </div>
+
+    }
+}

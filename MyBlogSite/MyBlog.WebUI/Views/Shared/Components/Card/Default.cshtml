@@ -1,0 +1,17 @@
+﻿@model MyBlog.DataAccess.ViewModels.HomePage.CardViewModel
+    
+
+
+<div class="row">
+    @foreach (var item in Model.Categories)
+    {
+        <div class="col-lg-3">
+            <img class="rounded-circle" src="@item.PictureUrl" alt="Generic placeholder image" width="140" height="140">
+            <h2>@item.CategoryName</h2>
+            <p><a class="btn btn-secondary" asp-controller="Post" asp-action="Index" asp-route-categoryId="@item.Id" role="button">Listele</a></p>
+        </div>
+    }
+
+
+
+</div>

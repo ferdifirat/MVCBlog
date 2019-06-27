@@ -1,0 +1,40 @@
+﻿@model MyBlog.DataAccess.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-lg-offset-3">
+
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+            {
+                <form method="post">
+                    <div class="form-group">
+                        <label for="emailAddress">Email Adresiniz</label>
+                        @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control", placeholder = "Email Adresi giriniz." })
+                        @Html.ValidationMessageFor(m => m.EmailAddress, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Şifre</label>
+                        @Html.TextBoxFor(m => m.Password, new { @class = "form-control", placeholder = "Şifre giriniz." })   @*PasswordFor'a değiştirilecek*@
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.CheckBoxFor(m => m.RememberMe)
+                        <label for="rememberMe">Beni Hatırla</label>
+                    </div>
+
+                    <div class="form-group">
+                        <a href="@*/Account/ForgotPassword*@#" style="float: right">Şifremi Unuttum</a>
+                        <br /> @*Burası?*@
+                    </div>
+                    <div class="form-group">
+                        <a href="/Account/Register" class="btn btn-primary" style=" float: left">Kayıt ol</a>
+                        <button type="submit" class="btn btn-primary" style="float: right">Giriş</button>
+                    </div>
+                </form>
+            }
+        </div>
+    </div>
+</div>

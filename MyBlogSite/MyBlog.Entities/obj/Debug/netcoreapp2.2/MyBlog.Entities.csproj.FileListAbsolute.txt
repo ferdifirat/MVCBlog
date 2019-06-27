@@ -1,0 +1,14 @@
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\bin\Debug\netcoreapp2.2\MyBlog.Entities.deps.json
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\bin\Debug\netcoreapp2.2\MyBlog.Entities.runtimeconfig.json
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\bin\Debug\netcoreapp2.2\MyBlog.Entities.runtimeconfig.dev.json
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\bin\Debug\netcoreapp2.2\MyBlog.Entities.dll
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\bin\Debug\netcoreapp2.2\MyBlog.Entities.pdb
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\bin\Debug\netcoreapp2.2\MyBlog.Core.dll
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\bin\Debug\netcoreapp2.2\MyBlog.Core.pdb
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\obj\Debug\netcoreapp2.2\MyBlog.Entities.csprojAssemblyReference.cache
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\obj\Debug\netcoreapp2.2\MyBlog.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\obj\Debug\netcoreapp2.2\MyBlog.Entities.AssemblyInfoInputs.cache
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\obj\Debug\netcoreapp2.2\MyBlog.Entities.AssemblyInfo.cs
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\obj\Debug\netcoreapp2.2\MyBlog.Entities.csproj.CopyComplete
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\obj\Debug\netcoreapp2.2\MyBlog.Entities.dll
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.Entities\obj\Debug\netcoreapp2.2\MyBlog.Entities.pdb

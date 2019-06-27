@@ -1,0 +1,76 @@
+﻿@model MyBlog.DataAccess.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-lg-offset-3">
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+            {
+                <form method="post">
+                    <div class="row">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.UserInfo.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
+                            @Html.TextBoxFor(m => m.UserInfo.FirstName, new { @class = "form-control input-lg" })
+                            @Html.ValidationMessageFor(m => m.UserInfo.FirstName, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.UserInfo.Surname, htmlAttributes: new { @class = "control-label col-md-2" })
+                            @Html.TextBoxFor(m => m.UserInfo.Surname, new { @class = "form-control input-lg" })
+                            @Html.ValidationMessageFor(m => m.UserInfo.Surname, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.UserInfo.CitizenshipNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+                            @Html.TextBoxFor(m => m.UserInfo.CitizenshipNumber, new { @class = "form-control input-lg" })
+                            @Html.ValidationMessageFor(m => m.UserInfo.CitizenshipNumber, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.UserInfo.Birthday, htmlAttributes: new { @class = "control-label col-md-2" })
+                            @Html.TextBoxFor(m => m.UserInfo.Birthday, new { @class = "form-control input-lg", @type = "date" })
+                            @Html.ValidationMessageFor(m => m.UserInfo.Birthday, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.UserInfo.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                            @Html.TextBoxFor(m => m.UserInfo.Email, new { @class = "form-control input-lg" })
+                            @Html.ValidationMessageFor(m => m.UserInfo.Email, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.UserInfo.PhoneNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+                            @Html.TextBoxFor(m => m.UserInfo.PhoneNumber, new { @class = "form-control input-lg" })
+                            @Html.ValidationMessageFor(m => m.UserInfo.PhoneNumber, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.UserInfo.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                            @Html.PasswordFor(m => m.UserInfo.Password, new { @class = "form-control input-lg" })
+                            @Html.ValidationMessageFor(m => m.UserInfo.Password, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.UserInfo.ConfirmPassword, htmlAttributes: new { @class = "control-label col-md-2" })
+                            @Html.PasswordFor(m => m.UserInfo.ConfirmPassword, new { @class = "form-control input-lg" })
+                            @Html.ValidationMessageFor(m => m.UserInfo.ConfirmPassword, "", new { @class = "text-danger" })
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.UserInfo.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.TextBoxFor(m => m.UserInfo.Address, new { @class = "form-control input-lg" })
+                        @Html.ValidationMessageFor(m => m.UserInfo.Address, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <input type="submit" value="Kayıt ol" class="btn btn-primary btn-block btn-lg" tabindex="7">
+                        </div>
+                    </div>
+                </form>
+            }
+        </div>
+    </div>
+</div>

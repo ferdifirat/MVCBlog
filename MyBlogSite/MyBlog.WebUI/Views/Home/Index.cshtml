@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!--Carousel View Component-->
+@await Component.InvokeAsync("Carousel")
+
+<div class="container">
+    </br>
+    <!--Cards View Component-->
+    @await Component.InvokeAsync("Card")
+
+    <br />
+    <hr />
+    <br />
+    <br />
+    <!--LatestPost View Component-->
+    @await Component.InvokeAsync("LatestPost")
+
+</div>
+
+
