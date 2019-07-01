@@ -1,5 +1,27 @@
 ﻿@model MyBlog.DataAccess.ViewModels.UserSummaryViewModel
-<div>
-    <a asp-controller="Account" asp-action="Profile">@Model.FullName</a>
-    <a  asp-controller="Account" asp-action="LogOff">Çıkış</a>
+@*<div>
+        <a asp-controller="Account" asp-action="Profile">@Model.FullName</a>
+        <a  asp-controller="Account" asp-action="LogOff">Çıkış</a>
+    </div>*@
+
+
+<a class="nav-link text-white fa fa-plus btn btn-success" style="margin-right:10px;" asp-area="" asp-controller="Post" asp-action="Add">Ekle</a>
+
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-user"></i> @Model.FullName
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item fa fa-cog" asp-controller="Account" asp-action="Profile"> Ayarlar</a>
+        
+        
+        @if (User.IsInRole("admin"))
+        {
+        <a class="dropdown-item fa fa-lock" asp-controller="Admin" asp-action="Index"> Admin Paneli</a>
+        }
+        <a class="dropdown-item fa fa-power-off" asp-controller="Account" asp-action="LogOff"> Çıkış</a>
+    </div>
 </div>
+
+

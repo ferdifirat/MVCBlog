@@ -37,14 +37,16 @@ namespace MyBlog.Business.Concrete
             return selectedList;
         }
 
-       
+               
 
         public List<Category> GetList(Expression<Func<Category, bool>> expression = null)
         {
             return _categoryDal.GetList(expression);
         }
 
-
-
+        public Category GetCategory(Expression<Func<Category, bool>> expression=null)
+        {
+            return _categoryDal.Get(expression);
+        }
     }
 }

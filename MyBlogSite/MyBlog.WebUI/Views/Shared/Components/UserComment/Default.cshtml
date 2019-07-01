@@ -7,16 +7,24 @@
     <div class="row">
         <ul class="list-group">
 
-            @foreach (var item in Model.Comments)
-            {
+            @{
+                if (Model.Comment != null)
+                {
+                    @foreach (var item in Model.Comments)
+                    {
+                        <li class="list-group-item">
+                            <h3>@item.Post.Title</h3>
+                            <p>Yorumunuz : @item.Content</p>
 
-            <li class="list-group-item">
-                <h3>@item.Post.Title</h3>
-                <p>Yorumunuz : @item.Content</p>
-            
-                <a class="btn btn-danger" asp-action="DeleteComment" asp-controller="Post" asp-route-id="@item.Id">Sil</a>
+                            <a class="btn btn-danger" asp-action="DeleteComment" asp-controller="Post" asp-route-id="@item.Id">Sil</a>
 
-            </li>
+                        </li>
+                    }
+                }
+                else
+                {
+                    <p class="alert-danger" style="margin-top:30px;">Henüz yapmış olduğunuz bir yorum bulunmamaktadır.</p>
+                }
             }
         </ul>
 

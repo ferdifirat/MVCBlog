@@ -53,3 +53,7 @@ C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\MyBlog.We
 C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\MyBlog.WebUI.dll
 C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\MyBlog.WebUI.pdb
 C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Post\Update.g.cshtml.cs
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_AdminLayout.g.cshtml.cs
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Index.g.cshtml.cs
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Categories.g.cshtml.cs
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\CategoryDetail.g.cshtml.cs
