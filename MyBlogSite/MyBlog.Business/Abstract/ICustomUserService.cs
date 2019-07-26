@@ -2,7 +2,9 @@
 using MyBlog.Entities.DTOs;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace MyBlog.Business.Abstract
 {
@@ -10,7 +12,7 @@ namespace MyBlog.Business.Abstract
     {
         CustomIdentityUser GetCurrentUser();
         bool UserRegister(UserDto userInfo);
-
+        /*Task<List<CustomIdentityUser>> GetUsersAsync();*/
 
     }
 }

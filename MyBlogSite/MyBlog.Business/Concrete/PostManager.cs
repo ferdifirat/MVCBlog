@@ -91,5 +91,30 @@ namespace MyBlog.Business.Concrete
                 return false;
             }
         }
+
+        public bool UpdatePost(Expression<Func<Post, bool>> expression)
+        {
+            try
+            {
+                var post = _postDal.Get(expression);
+                if (post.IsActive == true)
+                    post.IsActive = false;
+                else
+                    post.IsActive = true;
+
+                _postDal.Update(post);
+                _postDal.Save();
+                return true;
+            }
+            catch (Exception exp)
+            {
+                return false;
+            }
+        }
+
+        //public List<Post> GetListWithUserInformation(Expression<Func<Post, bool>> expression=null)
+        //{
+        //    return _postDal.GetListWithUserInformation(expression);
+        //}
     }
 }

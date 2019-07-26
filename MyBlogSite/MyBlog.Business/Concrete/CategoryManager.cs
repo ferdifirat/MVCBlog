@@ -48,5 +48,20 @@ namespace MyBlog.Business.Concrete
         {
             return _categoryDal.Get(expression);
         }
+
+        public bool DeleteCategory(int id)
+        {
+            try
+            {
+                var category = _categoryDal.Get(x => x.Id == id);
+                _categoryDal.Delete(category);
+                _categoryDal.Save();
+                return true;
+            }
+            catch (Exception exp)
+            {
+                return false;
+            }
+        }
     }
 }

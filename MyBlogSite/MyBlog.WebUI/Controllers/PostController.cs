@@ -53,8 +53,8 @@ namespace MyBlog.WebUI.Controllers
 
             if (_postService.AddPost(viewModel.Post))
             {
+                
                 return RedirectToAction("Index");
-
             }
 
             return View(viewModel);
@@ -101,6 +101,8 @@ namespace MyBlog.WebUI.Controllers
         {
             _commentService.AddComment(viewModel.Comment);
 
+            
+           
             return RedirectToAction("Detail", new { id = viewModel.Comment.PostId });
         }
 

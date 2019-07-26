@@ -56,4 +56,6 @@ C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\Razor\Vie
 C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_AdminLayout.g.cshtml.cs
 C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Index.g.cshtml.cs
 C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Categories.g.cshtml.cs
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Posts.g.cshtml.cs
+C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\PostDetail.g.cshtml.cs
 C:\Users\Ferdi\Desktop\MyBlogSite\MyBlog.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Admin\CategoryDetail.g.cshtml.cs

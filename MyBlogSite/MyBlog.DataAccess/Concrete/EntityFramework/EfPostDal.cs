@@ -4,6 +4,8 @@ using MyBlog.DataAccess.Abstract;
 using MyBlog.Entities.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace MyBlog.DataAccess.Concrete.EntityFramework
@@ -12,7 +14,8 @@ namespace MyBlog.DataAccess.Concrete.EntityFramework
     {
         public EfPostDal(DbContext dbContext) : base(dbContext)
         {
-
+            
         }
+        
     }
 }

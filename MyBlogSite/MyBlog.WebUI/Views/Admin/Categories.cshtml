@@ -23,8 +23,8 @@
                         <td>  @item.CategoryName</td>
                         <td>@item.ParentCategoryId</td>
                         <td>
-                            <a class="fas fa-fw fa-cog" asp-controller="admin" asp-action="CategoryDetail" asp-route-id="@item.Id"></a>
-                            <a class="fas fa-fw fa-trash " asp-controller="admin" asp-action="" asp-route-id="@item.Id"></a>
+                            <a class="fas fa-fw fa-cog text-info" asp-controller="Admin" asp-action="CategoryDetail" asp-route-id="@item.Id"></a>
+                            <a class="fas fa-fw fa-trash text-danger" asp-controller="Admin" asp-action="DeleteCategory" asp-route-id="@item.Id"></a>
                         </td>
                     </tr>
                 }

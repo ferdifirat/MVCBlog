@@ -1,11 +1,16 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using MyBlog.Business.Abstract;
+using MyBlog.DataAccess.Abstract;
+using MyBlog.DataAccess.Concrete.EntityFramework;
 using MyBlog.Entities.Concrete.CustomIdentity;
 using MyBlog.Entities.DTOs;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace MyBlog.Business.Concrete
 {
@@ -13,12 +18,15 @@ namespace MyBlog.Business.Concrete
     {
         private readonly UserManager<CustomIdentityUser> _userManager;
         private readonly HttpContext _context;
+        private readonly IApplicationUserDal _applicationUserDal;
 
         public CustomUserManager(
+            IApplicationUserDal applicationUserDal,
             UserManager<CustomIdentityUser> userManager,
             IHttpContextAccessor contextAccessor
             )
         {
+            _applicationUserDal = applicationUserDal;
             _userManager = userManager;
             _context = contextAccessor.HttpContext;
         }
@@ -29,6 +37,7 @@ namespace MyBlog.Business.Concrete
 
             return customIdentityUser;
         }
+
 
         public bool UserRegister(UserDto user)
         {
@@ -54,6 +63,14 @@ namespace MyBlog.Business.Concrete
             _userManager.AddToRoleAsync(customIdentityUser, "User").Wait();
             return true;
         }
+
+        //public async Task<List<CustomIdentityUser>> GetUsersAsync()
+        //{
+        //    using (var context = new MyBlogDbContext())
+        //    {
+        //        return await _userManager.Users.ToListAsync();
+        //    }
+        //}
 
     }
 }

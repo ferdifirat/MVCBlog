@@ -1,10 +1,12 @@
-﻿using System;
+﻿using MyBlog.Core.DataAccess;
+using MyBlog.Entities.Concrete.CustomIdentity;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MyBlog.DataAccess.Abstract
 {
-   public interface IApplicationUserDal
+   public interface IApplicationUserDal : IEntityRepository<CustomIdentityUser>
     {
     }
 }

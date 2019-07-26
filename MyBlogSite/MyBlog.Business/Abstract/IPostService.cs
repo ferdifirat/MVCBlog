@@ -14,5 +14,7 @@ namespace MyBlog.Business.Abstract
         List<Post> GetPostByCurrentUser();
         bool UpdatePost(Post post);
         bool DeletePost(int id);
+        //List<Post> GetListWithUserInformation(Expression<Func<Post, bool>> expression=null);
+        bool UpdatePost(Expression<Func<Post, bool>> expression);
     }
 }

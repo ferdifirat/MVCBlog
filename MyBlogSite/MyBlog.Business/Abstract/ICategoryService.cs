@@ -12,6 +12,7 @@ namespace MyBlog.Business.Abstract
         List<Category> GetList(Expression<Func<Category, bool>> expression = null);
         List<SelectListItem> GetCategoriesForCategoryComboBox();
         Category GetCategory(Expression<Func<Category, bool>> expression = null);
+        bool DeleteCategory(int id);
         
     }
 }

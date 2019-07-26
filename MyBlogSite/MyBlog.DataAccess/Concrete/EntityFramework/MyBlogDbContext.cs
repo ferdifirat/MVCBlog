@@ -20,7 +20,7 @@ namespace MyBlog.DataAccess.Concrete.EntityFramework
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server = localhost; Database = MyBlog; Trusted_Connection = true");
+            optionsBuilder.UseSqlServer(@"Server = .\SQLEXPRESS; Database = MyBlog; Trusted_Connection = true");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

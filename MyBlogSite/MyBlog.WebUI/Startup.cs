@@ -79,6 +79,7 @@ namespace MyBlog.WebUI
             #region Services Registrations
 
             services.AddScoped<ICustomUserService, CustomUserManager>();
+            services.AddScoped<IApplicationUserDal, EfApplicatonUserDal>();
             //services.AddScoped<IUserSessionService, UserSessionManager>();
 
             services.AddScoped<ICategoryService, CategoryManager>();
@@ -90,6 +91,8 @@ namespace MyBlog.WebUI
             services.AddScoped<ICommentService, CommentManager>();
             services.AddScoped<ICommentDal, EfCommentDal>();
 
+            
+           
             #endregion
 
             services.AddAuthorization();
