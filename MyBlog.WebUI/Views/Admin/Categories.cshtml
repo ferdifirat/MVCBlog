@@ -1,0 +1,47 @@
+﻿@model MyBlog.DataAccess.ViewModels.CategoriesViewModel
+
+@{
+    ViewData["Title"] = "Categories";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="list-group col-md-10 align-content-md-center">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Kategori Adı</th>
+                <th>Ana Kategori</th>
+                <th>Fotoğraf</th>
+                <th>Aksiyon</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model.Categories)
+            {
+                <tr>
+                    <td>@item.CategoryName</td>
+                    <td>@item.ParentCategoryId</td>
+                    <td><img class="img-responsive" src="@item.PictureUrl" alt="Chania" width="30" height="30"> </td>
+                    <td>
+                        <a class="fas fa-fw fa-cog text-info" asp-controller="Admin" asp-action="CategoryDetail" asp-route-id="@item.Id"></a>
+                        <a class="fas fa-fw fa-trash text-danger" asp-controller="Admin" asp-action="DeleteCategory" asp-route-id="@item.Id"></a>
+                    </td>
+                </tr>
+            }
+                <tr>
+                    <td><input type="text" class="form-control"  placeholder="Kategori Adını Yazınız"></td>
+                    <td><select class="form-control"><option>ParentCategoryId</option></select></td>
+                    <td><input type="url" class="form-control"  placeholder="Link ekleyiniz.."></td>
+                    <td>    <input class="text-white fa fa-plus btn btn-success" asp-action="CreateCategory" type="submit" value="Kaydet" style="float:right" /></td>
+                </tr>
+
+            
+
+
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,55 @@
+﻿@model MyBlog.DataAccess.ViewModels.PostViewModel
+@{
+    ViewData["Title"] = "Update";
+}
+<div class="container">
+    <div class="col-md-12">
+        <form asp-action="Update">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PostDto.CategoryId" class="control-label">Category</label>
+                    <select asp-for="PostDto.CategoryId" asp-items="Model.Categories" class="form-control"></select>
+                    <span asp-validation-for="PostDto.CategoryId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PostDto.Title" class="control-label"></label>
+                    <input asp-for="PostDto.Title" class="form-control" />
+                    <span asp-validation-for="PostDto.Title" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PostDto.Summary" class="control-label"></label>
+                    <textarea asp-for="PostDto.Summary" class="form-control"></textarea>
+                    <span asp-validation-for="PostDto.Summary" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PostDto.Content" class="control-label"></label>
+                    <textarea asp-for="PostDto.Content" class="form-control"></textarea>
+                    <span asp-validation-for="PostDto.Content" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PostDto.Picture" class="control-label">Picture URL </label>
+                    <input asp-for="PostDto.Picture" class="form-control" />
+                    <span asp-validation-for="PostDto.Picture" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row col-md-6">
+
+                <div class="form-group">
+                    <input type="hidden" asp-for="PostDto.Id" />
+                    <input type="submit" value="Güncelle" class="btn btn-primary" style="float:left" />
+                    <a class="btn btn-danger" asp-action="Delete" asp-controller="Post" asp-route-id="@Model.PostDto.Id">Sil</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

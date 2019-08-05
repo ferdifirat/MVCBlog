@@ -1,0 +1,32 @@
+﻿@model MyBlog.DataAccess.ViewModels.CommentsViewModel
+@{
+    ViewData["Title"] = "Default";
+}
+<div class="container">
+
+    <div class="row">
+        <ul class="list-group">
+
+            @{
+                if (Model.CommentDto != null)
+                {
+                    @foreach (var item in Model.Comments)
+                    {
+                        <li class="list-group-item">
+                            <h3>@item.PostCommentDto.Title</h3>
+                            <p>Yorumunuz : @item.Content</p>
+
+                            <a class="btn btn-danger" asp-action="DeleteComment" asp-controller="Post" asp-route-id="@item.Id">Sil</a>
+
+                        </li>
+                    }
+                }
+                else
+                {
+                    <p class="alert-danger" style="margin-top:30px;">Henüz yapmış olduğunuz bir yorum bulunmamaktadır.</p>
+                }
+            }
+        </ul>
+
+    </div>
+</div>

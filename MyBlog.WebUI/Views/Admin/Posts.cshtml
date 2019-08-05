@@ -1,0 +1,62 @@
+﻿@model MyBlog.DataAccess.ViewModels.PostsViewModel
+@{
+    ViewData["Title"] = "Posts";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="list-group col-md-10 align-content-md-center">
+
+    <table class="table table-striped">
+        <thead>
+            <tr class="text-center">
+                <th>Yazar</th>
+                <th>Kategori</th>
+                <th>Başlık</th>
+                <th>Oluşturulma Tarihi</th>
+                <th>Oylanma</th>
+                <th>Okunma Sayısı</th>
+                <th>Yayın Durumu</th>
+                <th>Aksiyon</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Posts)
+            {
+            <tr class="text-center">
+                <td>@item.PostsUser.UserName</td>
+                <td>@item.Category.CategoryName</td>
+                <td>@item.Title</td>
+                <td>@item.CreationDate</td>
+                <td>@item.Voting</td>
+                <td>@item.ReadCount</td>
+
+                <td class="text-center">
+                    @{
+                        if (item.IsActive == true)
+                        {
+                            <a class="fas fa-fw fa-check text-success text-center" asp-controller="Admin" asp-action="PostStatus" asp-route-id="@item.Id"></a>
+                        }
+                        else
+                        {
+                            <a class="fas fa-fw fa-times text-danger" asp-controller="Admin" asp-action="PostStatus" asp-route-id="@item.Id"></a>
+                        }
+                    }
+                </td>
+                <td>
+                    <a class="fas fa-fw fa-cog text-info " asp-controller="Admin" asp-action="PostDetail" asp-route-id="@item.Id"></a>
+                    <a class="fas fa-fw fa-trash text-danger " asp-controller="Admin" asp-action="DeletePost" asp-route-id="@item.Id"></a>
+                </td>
+            </tr>
+            }
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+
+</div>
+

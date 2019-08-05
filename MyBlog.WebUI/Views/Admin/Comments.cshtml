@@ -1,0 +1,51 @@
+﻿@model MyBlog.DataAccess.ViewModels.CommentsViewModel
+
+@{
+    ViewData["Title"] = "Comments";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="list-group col-md-10 align-content-md-center">
+
+    <table class="table table-striped">
+        <thead>
+            <tr class="text-center">
+                <th>Yazan</th>
+                <th>Yorum</th>
+                <th>Tarih</th>
+                <th>Gönderi Adı</th>
+                <th>Yayın Durumu</th>
+                <th>Aksiyon</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Comments)
+            {
+                <tr class="text-center">
+                    <td>@item.UserCommentDto.FirstName</td>
+                    <td>@item.Content</td>
+                    <td>@item.CommentDate.ToShortDateString()</td>
+                    <td>@item.PostCommentDto.Title</td>
+                  
+
+                    <td class="text-center">
+                        @{
+                            if (item.IsActive == true)
+                            {
+                                <a class="fas fa-fw fa-check text-success text-center" asp-controller="Admin" asp-action="CommentStatus" asp-route-id="@item.Id"></a>
+                            }
+                            else
+                            {
+                                <a class="fas fa-fw fa-times text-danger" asp-controller="Admin" asp-action="CommentStatus" asp-route-id="@item.Id"></a>
+                            }
+                        }
+                    </td>
+                    <td>
+                        <a class="fas fa-fw fa-trash text-danger " asp-controller="Admin" asp-action="DeleteComment" asp-route-id="@item.Id"></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

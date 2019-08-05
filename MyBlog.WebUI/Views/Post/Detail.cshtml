@@ -1,0 +1,45 @@
+﻿@model MyBlog.DataAccess.ViewModels.PostViewModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-3">
+            @await Component.InvokeAsync("CategoryList")
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="card text-center">
+                    <div class="card-header">
+                        @Model.PostDto.Title
+                    </div>
+                    <div class="card-body">
+                        <img src="@Model.PostDto.Picture" width="100%" />
+                        <p class="card-text">@Model.PostDto.Content</p>
+                        @{
+                            var timeSpan = (DateTime.Now - Model.PostDto.CreationDate);
+                            int day = timeSpan.Days;
+                            int hours = timeSpan.Hours;
+                            int minutes = timeSpan.Minutes;
+
+                        }
+
+                        @day gün - @hours saat - @minutes dakika önce eklendi.
+                    </div>
+                    <hr />
+                    <div class="text-left" style="margin-left:20px;">
+                        <h3>Yorumlar</h3>
+                        @await Component.InvokeAsync("Comment", new { postId = Model.PostDto.Id })
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
