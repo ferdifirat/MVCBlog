@@ -80,6 +80,13 @@ namespace MyBlog.Business.Concrete
             return true;
         }
 
+
+        public List<UserDto> GetUsersWithUserRoles()
+        {
+            return null;
+        }
+
+
         //public async Task<List<CustomIdentityUser>> GetUsersAsync()
         //{
         //    using (var context = new MyBlogDbContext())

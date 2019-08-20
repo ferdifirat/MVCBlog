@@ -5499,11 +5499,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.Entities\\MyBlog.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.Entities\\MyBlog.Entities.csproj",
       "projectName": "MyBlog.Entities",
-      "projectPath": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.Entities\\MyBlog.Entities.csproj",
+      "projectPath": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.Entities\\MyBlog.Entities.csproj",
       "packagesPath": "C:\\Users\\Ferdi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.Entities\\obj\\",
+      "outputPath": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5522,8 +5522,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.Core\\MyBlog.Core.csproj": {
-              "projectPath": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.Core\\MyBlog.Core.csproj"
+            "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.Core\\MyBlog.Core.csproj": {
+              "projectPath": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.Core\\MyBlog.Core.csproj"
             }
           }
         }

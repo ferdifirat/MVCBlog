@@ -29,6 +29,7 @@ namespace MyBlog.Business.Concrete
                 CommentDate = DateTime.Now,
                 IsActive = true,
                 Content = commentDto.Content,  //TODO Kontrol
+                PostId = commentDto.PostId
             };
             _commentDal.Add(addComment);
             _commentDal.Save();
@@ -59,7 +60,7 @@ namespace MyBlog.Business.Concrete
         public List<CommentDto> GetCommentsByCurrentUser()
         {
             var result = new List<CommentDto>();
-            var getCommentsByCurretUser= _commentDal.GetCommentListWithPostInformation(x => x.UserId == _customUserService.GetCurrentUser().Id);
+            var getCommentsByCurretUser = _commentDal.GetCommentListWithPostInformation(x => x.UserId == _customUserService.GetCurrentUser().Id);
 
             foreach (var item in getCommentsByCurretUser)
             {
@@ -101,45 +102,13 @@ namespace MyBlog.Business.Concrete
 
         public List<CommentDto> GetListWithUserInformation(Expression<Func<Comment, bool>> expression = null)
         {
-            var result = new List<CommentDto>();
-
-            var getListWithUserInformation= _commentDal.GetListWithUserInformation(expression);
-
-            foreach (var item in getListWithUserInformation)
-            {
-                var dtoComment = new CommentDto()
-                {
-                    CommentDate = item.CommentDate,
-                    Content = item.Content,
-                    IsActive = item.IsActive,
-                    PostId = item.PostId,
-                    Id = item.Id,
-                    UserId = item.UserId
-                };
-            }
-
-            return result;
+            return  _commentDal.GetListWithUserInformation(expression);
         }
 
 
         public List<CommentDto> GetCommentsWithUserInformation()
         {
-            var result = new List<CommentDto>();
-            var getCommentsWithUserInformation = _commentDal.GetCommentsWithUserInformation();
-            
-            foreach (var item in getCommentsWithUserInformation)
-            {
-                var dtoComment = new CommentDto()
-                {
-                    CommentDate = item.CommentDate,
-                    Content = item.Content,
-                    UserId = item.UserId,
-                    Id = item.Id,
-                    IsActive = item.IsActive,
-                    PostId = item.PostId
-                };
-            }
-            return result; 
+            return _commentDal.GetCommentsWithUserInformation();
         }
 
         public bool UpdateComment(Expression<Func<Comment, bool>> expression)

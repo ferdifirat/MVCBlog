@@ -19,5 +19,7 @@ namespace MyBlog.Entities.Concrete.CustomIdentity
         public virtual DateTime Birthday { get; set; }
         public virtual bool? Status { get; set; }
         public virtual string Address { get; set; }
+
+        
     }
 }

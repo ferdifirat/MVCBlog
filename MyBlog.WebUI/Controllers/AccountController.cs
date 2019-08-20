@@ -70,7 +70,7 @@ namespace MyBlog.WebUI.Controllers
         {
             return View();
         }
-        
+
         [AllowAnonymous]
         public ActionResult Register()
         {
@@ -92,6 +92,79 @@ namespace MyBlog.WebUI.Controllers
                 return View(registerViewModel);
             }
             return RedirectToAction("Login", "Account");
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public ActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> ForgotPassword(string email)
+        {
+            if (string.IsNullOrEmpty(email))
+            {
+                return View();
+            }
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+            {
+                return View();
+            }
+
+            var confirmationCode = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+            var callBackUrl = Url.Action("ResetPassword", "Security",
+                new { userId = user.Id, code = confirmationCode });
+
+            //send callback Url with email
+
+            return RedirectToAction("ForgotPasswordEmailSent");
+        }
+
+        public ActionResult ForgotPasswordEmailSent()
+        {
+            return View();
+        }
+
+        public ActionResult ResetPassword(string userId, string code)
+        {
+            if (userId == null || code == null)
+            {
+                throw new ApplicationException("Code must be ssupplied for password reset");
+            }
+
+            var model = new ResetPasswordViewModel { Code = code };
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel resetPasswordViewModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
+            var user = await _userManager.FindByEmailAsync(resetPasswordViewModel.Email);
+            if (user == null)
+            {
+                throw new ApplicationException("User not found");
+            }
+            var result = await _userManager.ResetPasswordAsync(user, resetPasswordViewModel.Code, resetPasswordViewModel.Password);
+            if (result.Succeeded)
+            {
+                return RedirectToAction("ResetPasswordConfirm");
+            }
+            return View();
+        }
+
+        public IActionResult ResetPasswordConfirm()
+        {
+            return View();
         }
 
         public ActionResult LogOff()

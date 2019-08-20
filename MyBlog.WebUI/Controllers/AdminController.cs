@@ -126,6 +126,13 @@ namespace MyBlog.WebUI.Controllers
             return View();
         }
 
+        public IActionResult Users()
+        {
+            var model = new UsersViewModel();
+           
+            // to do:
+            return View(model);
+        }
 
 
 

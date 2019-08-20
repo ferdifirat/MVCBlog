@@ -12,6 +12,7 @@ namespace MyBlog.Business.Abstract
     {
         CustomIdentityUser GetCurrentUser();
         bool UserRegister(UserDto userInfo);
+        List<UserDto> GetUsersWithUserRoles();
         /*Task<List<CustomIdentityUser>> GetUsersAsync();*/
 
     }

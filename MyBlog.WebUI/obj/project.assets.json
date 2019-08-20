@@ -13450,11 +13450,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.WebUI\\MyBlog.WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.WebUI\\MyBlog.WebUI.csproj",
       "projectName": "MyBlog.WebUI",
-      "projectPath": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.WebUI\\MyBlog.WebUI.csproj",
+      "projectPath": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.WebUI\\MyBlog.WebUI.csproj",
       "packagesPath": "C:\\Users\\Ferdi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.WebUI\\obj\\",
+      "outputPath": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.WebUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13473,14 +13473,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.Business\\MyBlog.Business.csproj": {
-              "projectPath": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.Business\\MyBlog.Business.csproj"
+            "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.Business\\MyBlog.Business.csproj": {
+              "projectPath": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.Business\\MyBlog.Business.csproj"
             },
-            "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.DataAccess\\MyBlog.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.DataAccess\\MyBlog.DataAccess.csproj"
+            "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.DataAccess\\MyBlog.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.DataAccess\\MyBlog.DataAccess.csproj"
             },
-            "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.Entities\\MyBlog.Entities.csproj": {
-              "projectPath": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.Entities\\MyBlog.Entities.csproj"
+            "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.Entities\\MyBlog.Entities.csproj": {
+              "projectPath": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.Entities\\MyBlog.Entities.csproj"
             }
           }
         }

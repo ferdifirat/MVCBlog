@@ -5518,11 +5518,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.DataAccess\\MyBlog.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.DataAccess\\MyBlog.DataAccess.csproj",
       "projectName": "MyBlog.DataAccess",
-      "projectPath": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.DataAccess\\MyBlog.DataAccess.csproj",
+      "projectPath": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.DataAccess\\MyBlog.DataAccess.csproj",
       "packagesPath": "C:\\Users\\Ferdi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5541,8 +5541,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.Entities\\MyBlog.Entities.csproj": {
-              "projectPath": "C:\\Users\\Ferdi\\Desktop\\MyBlogSite\\MyBlog.Entities\\MyBlog.Entities.csproj"
+            "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.Entities\\MyBlog.Entities.csproj": {
+              "projectPath": "C:\\Users\\Ferdi\\Desktop\\newproject\\MyBlogSite\\MyBlog.Entities\\MyBlog.Entities.csproj"
             }
           }
         }

@@ -66,8 +66,14 @@ namespace MyBlog.DataAccess.Concrete.EntityFramework
                     Id = item.Id,
                     IsActive = item.IsActive,
                     PostId = item.PostId,
-                    //AspNetUsers = item.AspNetUsers, //TODO EKLENECEK:
-                    UserId = item.UserId
+                    UserId = item.UserId,
+                    UserCommentDto=new UserCommentDto()
+                    {
+                        Id=item.AspNetUsers.Id,
+                        FirstName=item.AspNetUsers.FirstName,
+                        Email=item.AspNetUsers.Email,
+                        CitizenshipNumber=item.AspNetUsers.CitizenshipNumber
+                    }
                 }).ToList();
             }
 
@@ -88,7 +94,21 @@ namespace MyBlog.DataAccess.Concrete.EntityFramework
                     CommentDate=item.CommentDate,
                     Content=item.Content,
                     Id=item.Id,
-                    IsActive=item.IsActive
+                    IsActive=item.IsActive,
+                    UserCommentDto=new UserCommentDto()
+                    {
+                        CitizenshipNumber=item.AspNetUsers.CitizenshipNumber,
+                        Email=item.AspNetUsers.Email,
+                        FirstName=item.AspNetUsers.FirstName,
+                        Id=item.AspNetUsers.Id
+                    },
+                    PostCommentDto=new PostCommentDto()
+                    {
+                        Id=item.Post.Id,
+                        Title=item.Post.Title
+                    }
+                    
+                    
                 }).ToList();
                  
             }
